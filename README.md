@@ -61,7 +61,7 @@ interface, powered by Django.
 
 ## How to use our program:
 
-### Schedule Builder
+### I. Schedule Builder
 * Once you have successfully see our beautiful interface, the first thing you want 
 to do, of course, is to input **3 different** classes you want to take 
 in the next quarter here at UChicago!
@@ -79,12 +79,11 @@ It will show you a table of course information, including
 
 * Notice: you might be seeing a course **of the same section number** occur 
 twice in the list. This is because that particular course would have both 
-undergraduate and graduate in the same lecture 
-(be careful with those cool grad students :smiling_imp:)
+undergraduate and graduate in the same lecture. 
 
 * In the very first column of the course table, you are able to check the empty 
 boxes to indicate which courses you would like to take (If you are a greedy person, 
-you can also check all boxes that are available :smirk:). Based on the 
+you can also check all boxes that are available). Based on the 
 combination of courses you select, AldaCourse can intelligently generate all 
 feasible and non-conflicted course schedules that best staisfy your demand.
 
@@ -102,7 +101,7 @@ courses you select.
 We couldn't generate schedule.", it means based on your course selection, there 
 is no feasible schedules available. So... think about other course options.
 
-### Course Evaluation
+### II. Course Evaluation
 * If you want to know the evaluation of the instructor of a particular course 
 that you want to take, just simply click on the instructor name in the table.
 
@@ -113,10 +112,10 @@ to select the instructor you are interested in.
 'Instructor Evaluation' button, you will then see the evaluation
 of that insturctor in a **clean**, **consistent**, **organized** and **systematic** format.
 
-### Open-spot Reminder
+### III. Open-spot Reminder
 * In case a popular class that you want to take is already full and no more empty 
 seat available at the time, no worries, AldaCourse can resolve this issue 
-super easily for you:grimacing:.
+super easily for you.
 
 * Check the box of that popular course that is currently full, and input your 
 email address in the email address option below the table.
