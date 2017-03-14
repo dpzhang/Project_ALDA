@@ -22,7 +22,6 @@ from openpyxl import load_workbook
 import re
 import numpy as np
 
-# initialize and activate workbook file
 wb =load_workbook(filename = 'template.xlsx')
 template = wb.active
 
@@ -156,4 +155,5 @@ def builder(course_list, file_name):
                                                         num_cells)
         write_schedule(template, starting_cells, \
                        merge_patterns, course)
+
     wb.save(file_name)

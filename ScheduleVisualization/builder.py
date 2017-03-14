@@ -22,6 +22,9 @@ from openpyxl import load_workbook
 import re
 import numpy as np
 
+wb =load_workbook(filename = 'template.xlsx')
+template = wb.active
+
 def time_calculator(time):
     '''
     This function is used to convert time data to appropriate and suitable
