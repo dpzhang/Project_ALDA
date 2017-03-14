@@ -44,27 +44,28 @@ the presentation slides.
 called **Project_ALDA**.
 
 4. In the home directory of **Project_ALDA**, type in <code>sh alda_install.sh</code>. 
-    + After typing in this line of code, you might be asked to input the 
+    + After typing in this bash command, you might be asked to input the 
       password of your machine.
-    + After inputting your password, it would start to install all required
+    + After inputting your password, Linux would start to install all required
       packages so as to ensure AldaCourse could run successfully and 
       smoothly in your machine.
-    + **Friendly Reminder**: you only need to install once in your machine, and it might 
+    + **Friendly Reminder**: you only need to install once, and it might 
       take about 30s to 1min to finish all required installations. 
       (patience is a virtue:sunglasses:)
 
 ## How to launch AldaCourse on **Ubuntu**:
-1. After you have finished installing all required packages, go to the home 
-directory of AldaCourse in your machine and type in <code>sh alda_prep.sh</code>. 
-After typing in that command, you will find the terminal you are using could 
-no longer input bash command. 
+1. Go to the home directory of AldaCourse in your machine and type in 
+<code>sh alda_prep.sh</code>.
+    + If you are a first-time user, you can just stay in the same terminal 
+window and input the same command.
+    + **Notice**: after typing in <code>sh alda_prep.sh</code>, you will find 
+the current terminal you are using could no longer input other bash command. 
 
 2. **Open a new terminal in the same directory**, and type in <code>sh alda_init.sh</code>. 
-It would automatically open your default web browser and you will see our amazing 
+It would automatically launch your default web browser and you will see our amazing 
 interface, powered by Django.
 
 ## How to use our program:
-
 ### I. Schedule Builder
 * Once you have successfully see our beautiful interface, the first thing you want 
 to do, of course, is to input **3 different** classes you want to take 
