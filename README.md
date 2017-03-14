@@ -56,8 +56,9 @@ called **Project_ALDA**.
 ## How to launch AldaCourse on **Ubuntu**:
 1. Go to the home directory of AldaCourse in your machine and type in 
 <code>sh alda_prep.sh</code>.
-    + If you are a first-time user, you can just stay in the same terminal 
-window and input the same command.
+    + If you are a first-time user and just finished installing all packages 
+following the tutorial above, you can actually just stay in the same terminal 
+window and input the command <code>sh alda_prep.sh</code>.
     + **Notice**: after typing in <code>sh alda_prep.sh</code>, you will find 
 the current terminal you are using could no longer input other bash command. 
 
