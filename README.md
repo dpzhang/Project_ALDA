@@ -42,11 +42,13 @@ the presentation slides.
 * 3. After cloning the git repo, you will find a new local sub-directory called 
 **Project_ALDA**.
 * 4. In your terminal, type in <code>sh alda_prep.sh</code>. 
-    + After typing in this line of code, you might be asked to input your 
-      password.
+    + After typing in this line of code, you might be asked to input the 
+      password of your machine.
     + After inputting your password, it would start to install all required
       packages so as to ensure AldaCourse could run successfully and 
       smoothly in your machine.
+    + **Friendly Reminder**: it might take about 30s to 1min and patience is a 
+virtue:sunglasses:.
 * 5. **Open a new terminal**, and type in <code>sh alda_init.sh</code>. It 
      would automatically open your default web browser and you will see our 
      interface, powered by Django, in front of you.
