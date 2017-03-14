@@ -34,16 +34,16 @@ the presentation slides.
 * PhantomJS (v2.1.1) 
 
 ## How to install all required packages on **Ubuntu** (super eazy):
-* 1.Fire up a terminal, and go to the directory you want to store AldaCourse.
+1. Fire up a terminal, and go to the directory you want to store AldaCourse.
 
-* 2.In the directory of your choice, run this command to clone the git 
+2. In the directory of your choice, run this command to clone the git 
  epository: <br /> 
 <code>git clone https://github.com/dpzhang/Project_ALDA.git</code>
 
-* 3.After cloning the git repo, you will find a new local sub-directory 
+3. After cloning the git repo, you will find a new local sub-directory 
 called **Project_ALDA**.
 
-* 4.In the home directory of **Project_ALDA**, type in <code>sh alda_install.sh</code>. 
+4. In the home directory of **Project_ALDA**, type in <code>sh alda_install.sh</code>. 
     + After typing in this line of code, you might be asked to input the 
       password of your machine.
     + After inputting your password, it would start to install all required
@@ -54,12 +54,12 @@ called **Project_ALDA**.
       (patience is a virtue:sunglasses:)
 
 ## How to launch AldaCourse on **Ubuntu**:
-* 1.After you have finished installing all required packages, go to the home 
+1. After you have finished installing all required packages, go to the home 
 directory of AldaCourse in your machine and type in <code>sh alda_prep.sh</code>. 
 After typing in that command, you will find the terminal you are using could 
 no longer input bash command. 
 
-* 2.**Open a new terminal in the same directory**, and type in <code>sh alda_init.sh</code>. 
+2. **Open a new terminal in the same directory**, and type in <code>sh alda_init.sh</code>. 
 It would automatically open your default web browser and you will see our amazing 
 interface, powered by Django.
 
@@ -95,13 +95,13 @@ feasible and non-conflicted course schedules that best staisfy your demand.
 "Download Schedules" button below. 
 
 * Two possible outcomes:
-    + 1.You will see a message called "Your courses schedules are generated 
+    1. You will see a message called "Your courses schedules are generated 
 and have already been downloaded to your AldaCourse directory".The generated course schedules 
 could be found in <code>./Project_Alda/AldaCourse/aldacourse/schedule#.xlsx</code>. The
  output course schedule are all in <code>.xlsx</code> spreadsheet format and 
 the number of generated spreadsheets will soly depend on the combination of 
 courses you select. 
-    + 2.If you see a message like "There's conflict in your course selection. 
+    2. If you see a message like "There's conflict in your course selection. 
 We couldn't generate schedule.", it means based on your course selection, there 
 is no feasible schedules available. So... think about other course options.
 
