@@ -100,7 +100,7 @@ def index(request):
             coursenum = course[4:]
             enrollcrawler = main(coursedept, coursenum, emailadd)
             if enrollcrawler:
-                context['form2'] = "This course is open, check your email box!"
+                context['form2'] = "This course is open, check your mailbox!"
             else:
                 context['form2'] = "This course is currently closed. We'll let you know when it's open!"
             
