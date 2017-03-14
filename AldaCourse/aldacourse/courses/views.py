@@ -81,7 +81,7 @@ def index(request):
         dpoutput = create_schedules(coursels)
         context['form3'] = None
         if dpoutput > 0:
-            context['form2'] = "Your course schedules are generated and have already downloaded to your AldaCourse directory @ <./Project_ALda/AldaCourse/aldacourse>!"
+            context['form2'] = "Your course schedules are generated and have already been downloaded to your AldaCourse directory @ <./Project_ALda/AldaCourse/aldacourse>!"
         else:
             context['form2'] = "There's conflict in your course selection. We couldn't generate schedule."
     elif request.method == 'POST' and "emailbtn" in request.POST:
