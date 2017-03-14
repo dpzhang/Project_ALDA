@@ -71,6 +71,7 @@ def index(request):
         context['form1'] = None
         dpinput = Course.objects.filter(cid__in=selectedcourses)
         coursels = []
+        courseset = set()
         for input in dpinput:
             coursenum = input.coursenumber
             coursename = input.name
@@ -78,12 +79,16 @@ def index(request):
             coursetime = input.daytime
             inputls = [coursenum, coursename, courseloc, coursetime]
             coursels.append(inputls)
-        dpoutput = create_schedules(coursels)
-        context['form3'] = None
-        if dpoutput > 0:
-            context['form2'] = "Your course schedules are generated and have already been downloaded to your AldaCourse directory @ <./Project_ALda/AldaCourse/aldacourse>!"
+            courseset.add(coursenum)
+        if len(courseset) != 3:
+            context['form2'] = "Please choose at least one section for each of the three courses you searched."
         else:
-            context['form2'] = "There's conflict in your course selection. We couldn't generate schedule."
+            dpoutput = create_schedules(coursels)
+            context['form3'] = None
+            if dpoutput > 0:
+                context['form2'] = "Your course schedules are generated and have already been downloaded to your AldaCourse directory @ <./Project_ALda/AldaCourse/aldacourse>!"
+            else:
+                context['form2'] = "There's conflict in your course selection. We couldn't generate schedule."
     elif request.method == 'POST' and "emailbtn" in request.POST:
         for i in range(1, 21):
             if 'course' + str(i) in request.POST:
@@ -149,6 +154,7 @@ class ChooseinsView(generic.DetailView):
                         if len(res) != 1:
                             self.context['message'] = "Sorry, this instructor doesn't have evaluation yet."
                             self.context['result'] = ['']
+                            self.context['courseresult'] = ['']
                         else:
                             self.context['message'] = None
                             self.context['result'] = res
