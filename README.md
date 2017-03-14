@@ -47,8 +47,8 @@ the presentation slides.
     + After inputting your password, it would start to install all required
       packages so as to ensure AldaCourse could run successfully and 
       smoothly in your machine.
-    + **Friendly Reminder**: it might take about 30s to 1min and patience is a 
-virtue:sunglasses:.
+    + **Friendly Reminder**: it might take about 30s to 1min to finish all 
+required installations. (patience is a virtue:sunglasses:)
 * 5. **Open a new terminal**, and type in <code>sh alda_init.sh</code>. It 
      would automatically open your default web browser and you will see our 
      interface, powered by Django, in front of you.
