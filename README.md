@@ -33,32 +33,102 @@ the presentation slides.
 * Django (v1.10.6)
 * PhantomJS (v2.1.1) 
 
-## How to use our program on **Ubuntu**:
+## How to install all required packages on **Ubuntu** (super eazy):
 * 1. Fire up a terminal, and go to the directory you want to store AldaCourse.
 * 2. In the directory of your choice, run this command to clone the git 
  epository: <br /> 
 <code>git clone https://github.com/dpzhang/Project_ALDA.git</code>
 * 3. After cloning the git repo, you will find a new local sub-directory called 
 **Project_ALDA**.
-* 4. In your terminal, type in <code>sh alda_prep.sh</code>. 
+* 4. In the home directory of **Project_ALDA**, type in <code>sh alda_install.sh</code>. 
     + After typing in this line of code, you might be asked to input the 
       password of your machine.
     + After inputting your password, it would start to install all required
       packages so as to ensure AldaCourse could run successfully and 
       smoothly in your machine.
-    + **Friendly Reminder**: it might take about 30s to 1min to finish all 
-required installations. (patience is a virtue:sunglasses:)
-* 5. **Open a new terminal in the same directory**, and type in <code>sh alda_init.sh</code>. 
-It would automatically open your default web browser and you will see our 
-     interface, powered by Django.
-* 6. The generated course schedules could be found in <code>./Project_Alda/AldaCourse/aldacourse/schedule#.xlsx</code>
-    + Based on the combination of courses you select, AldaCourse can 
-      intelligently generate all feasible and non-conflicted course schedules 
-      that best staisfy your demand.
-    + The output course schedule are all in <code>.xlsx</code> spreadsheet 
-format and the number of generated spreadsheets will soly depend on the 
-combination of courses you select. 
-* 7. Lay back, relax, and lets fly! 
+    + **Friendly Reminder**: you only need to install once in your machine, and 
+it might take about 30s to 1min to finish all required installations. (patience is a virtue:sunglasses:)
+
+## How to launch AldaCourse on **Ubuntu**:
+* 1. After you have finished installing all required packages, go to the home 
+directory of AldaCourse in your machine and type in <code>sh alda_prep.sh</code>. 
+After typing in that command, you will find the terminal you are using could 
+no longer input bash command. 
+
+* 2. **Open a new terminal in the same directory**, and type in <code>sh alda_init.sh</code>. 
+It would automatically open your default web browser and you will see our amazing 
+interface, powered by Django.
+
+## How to use our program:
+
+### Schedule Builder
+* Once you have successfully see our beautiful interface, the first thing you want 
+to do, of course, is to input **3 different** classes you want to take 
+in the next quarter here at UChicago!
+
+* After putting in **3 different** courses, click on the 'Search' button below. 
+It will show you a table of course information, including 
+    + Course Control Numbers (CCN) -- you can also click on it to see the course description
+    + Section numbers 
+    + Course Name
+    + Undergrad/Grad section 
+    + Day/Time
+    + Instructor Name(s)
+    + Location
+    + Lec/SEM 
+
+* Notice: you might be seeing a course **of the same section number** occur 
+twice in the list. This is because that particular course would have both 
+undergraduate and graduate in the same lecture 
+(be careful with those cool grad students :smiling_imp:)
+
+* In the very first column of the course table, you are able to check the empty 
+boxes to indicate which courses you would like to take (If you are a greedy person, 
+you can also check all boxes that are available :smirk:). Based on the 
+combination of courses you select, AldaCourse can intelligently generate all 
+feasible and non-conflicted course schedules that best staisfy your demand.
+
+* After checking the boxes and indicating your course selection, click on the 
+''Download Schedules'' button below. 
+
+* Two possible outcomes:
+    + 1. Boom Shaka Laka! You will see a message called 'Your courses schedules are generated 
+and have already been downloaded to your AldaCourse directory'.The generated course schedules 
+could be found in <code>./Project_Alda/AldaCourse/aldacourse/schedule#.xlsx</code>. The
+ output course schedule are all in <code>.xlsx</code> spreadsheet format and 
+the number of generated spreadsheets will soly depend on the combination of 
+courses you select. 
+    + 2. If you see a message like "There's conflict in your course selection. 
+We couldn't generate schedule.", it means based on your course selection, there 
+is no feasible schedules available. So... think about other course options.
+
+### Course Evaluation
+* If you want to know the evaluation of the instructor of a particular course 
+that you want to take, just simply click on the instructor name in the table.
+
+* In case a class is taught by multiple professors, AldaCourse would bring you to a page 
+to select the instructor you are interested in. 
+
+* After checking the box before the name of one instructor, click on 
+'Instructor Evaluation' button, you will then see the evaluation
+of that insturctor in a **clean**, **consistent**, **organized** and **systematic** format.
+
+### Open-spot Reminder
+* In case a popular class that you want to take is already full and no more empty 
+seat available at the time, no worries, AldaCourse can resolve this issue 
+super easily for you:grimacing:.
+
+* Check the box of that popular course that is currently full, and input your 
+email address in the email address option below the table.
+
+* Finally, click the 'Get Notification' button. 
+
+* Boom Shaka Laka! Congratualations, now you will be one of the first persons 
+to receive an email of notification knowing when that popular courss will have an empty seat.
+
+* **Disclaimer**: this AldaCourse function does not guarantee you will be able 
+to get what you want. Some other factors, such as how often you check your emails or 
+how fast you can type and click on your laptop, are crucial. So... Good luck!
 
 ## Contributors
 **Alice Mee Seon Chung** [Alicechung](https://github.com/Alicechung)
