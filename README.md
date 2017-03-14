@@ -126,7 +126,7 @@ email address in the "Email Address Option" below the table.
 * Finally, click the "Get Notification" button. 
 
 * Congratualations, now you will be one of the first persons 
-to receive an email of notification knowing when that popular courss will have an empty seat.
+to receive an email of notification knowing when that popular course will have an empty seat.
     + **Disclaimer**: this AldaCourse function does not guarantee you will be able 
 to get the course you want. Some other factors, such as how often you check your emails or 
 how fast you can type and click on your laptop, are extraordinarily crucial. So... Good luck!
