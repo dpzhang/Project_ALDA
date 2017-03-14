@@ -14,5 +14,8 @@ sudo wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-
 # extract the files to directory
 sudo tar xjf phantomjs-2.1.1-linux-x86_64.tar.bz2
 
+sudo mv $PHANTOM_JS /usr/local/share
+sudo ln -sf /usr/local/share/$PHANTOM_JS/bin/phantomjs /usr/local/bin
+
 cd AldaCourse/aldacourse/
 python3 manage.py runserver
