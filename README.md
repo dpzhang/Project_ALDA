@@ -34,7 +34,7 @@ the presentation slides.
 * PhantomJS (v2.1) -- need to be installed separately
     + reference: [Phantomjs.org Download Page](http://phantomjs.org/download.html)
 
-## How to use our program:
+## How to use our program on **Ubuntu**:
 * 1. Fire up a terminal, and go to the directory you want to store AldaCourse.
 * 2. In the directory of your choice, run this command to clone the git 
  epository: <br /> 
