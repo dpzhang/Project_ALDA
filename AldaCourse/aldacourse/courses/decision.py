@@ -15,7 +15,7 @@ The current script defines the following functions:
     * create_schedule()
 ---------------------------------------------------------------------------
 '''
-from builder import *
+from .builder import *
 import itertools
 
 # this python script is used to determine:
