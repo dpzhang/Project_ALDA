@@ -48,9 +48,9 @@ the presentation slides.
       smoothly in your machine.
     + **Friendly Reminder**: it might take about 30s to 1min to finish all 
 required installations. (patience is a virtue:sunglasses:)
-* 5. **Open a new terminal**, and type in <code>sh alda_init.sh</code>. It 
-     would automatically open your default web browser and you will see our 
-     interface, powered by Django, in front of you.
+* 5. **Open a new terminal in the same directory**, and type in <code>sh alda_init.sh</code>. 
+It would automatically open your default web browser and you will see our 
+     interface, powered by Django.
 * 6. The generated course schedules could be found in <code>./Project_Alda/AldaCourse/aldacourse/schedule#.xlsx</code>
     + Based on the combination of courses you select, AldaCourse can 
       intelligently generate all feasible and non-conflicted course schedules 
