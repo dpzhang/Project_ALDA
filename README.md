@@ -11,8 +11,7 @@ This repository contains the final course project for CAPP 30122.
 * <code>AldaCourse</code>: contains all individual components of Project ALDA 
 listed below together with a Django interface.
 
-* <code>CourseCrawler</code>: contains all scripts necessary to complete the 
-tasks of logging in to <my.uchicago.edu> and scrapping all course informations.
+* <code>CourseCrawler</code>: contains all scripts necessary to scrap course informations.
 
 * <code>CourseEvaluation</code>: contains all scripts necessary to scrap 
 course evalations.
