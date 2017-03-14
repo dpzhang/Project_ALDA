@@ -82,7 +82,7 @@ It will show you a table of course information, including
     + Location
     + Lec/SEM 
 
-* Notice: you might be seeing a course **of the same section number** occur 
+* **Notice**: you might be seeing a course **of the same section number** occur 
 twice in the list. This is because that particular course would have both 
 undergraduate and graduate in the same lecture. 
 
@@ -93,14 +93,12 @@ combination of courses you select, AldaCourse can intelligently generate all
 feasible and non-conflicted course schedules that best staisfy your demand.
 
 * After checking the boxes and indicating your course selection, click on the 
-"Download Schedules" button below. 
-
-* Two possible outcomes:
+"Download Schedules" button below. There would be two possible outcomes:
     1. You will see a message called "Your courses schedules are generated 
-and have already been downloaded to your AldaCourse directory".The generated course schedules 
-could be found in <code>./Project_Alda/AldaCourse/aldacourse/schedule#.xlsx</code>. The
- output course schedule are all in <code>.xlsx</code> spreadsheet format and 
-the number of generated spreadsheets will soly depend on the combination of 
+and have already been downloaded to your AldaCourse directory". The generated course schedules 
+could be found in <code>./Project_Alda/AldaCourse/aldacourse/schedule#.xlsx</code>. 
+The output course schedule are all in <code>.xlsx</code> spreadsheet format and 
+the number of generated spreadsheets will soley depend on the combination of 
 courses you select. 
     2. If you see a message like "There's conflict in your course selection. 
 We couldn't generate schedule.", it means based on your course selection, there 
@@ -114,25 +112,24 @@ that you want to take, just simply click on the instructor name in the table.
 to select the instructor you are interested in. 
 
 * After checking the box before the name of one instructor, click on 
-"Instructor Evaluation" button, you will then see the evaluation
+"Instructor Evaluation" button. You will then see the evaluation
 of that insturctor in a **clean**, **consistent**, **organized** and **systematic** format.
 
 ### III. Open-spot Reminder
 * In case a popular class that you want to take is already full and no more empty 
-seat available at the time, no worries, AldaCourse can resolve this issue 
-super easily for you.
+seat available at the time, no worries, AldaCourse is made to resolve this 
+issue right for you.
 
 * Check the box of that popular course that is currently full, and input your 
-email address in the email address option below the table.
+email address in the "Email Address Option" below the table.
 
 * Finally, click the "Get Notification" button. 
 
 * Congratualations, now you will be one of the first persons 
 to receive an email of notification knowing when that popular courss will have an empty seat.
-
-* **Disclaimer**: this AldaCourse function does not guarantee you will be able 
-to get what you want. Some other factors, such as how often you check your emails or 
-how fast you can type and click on your laptop, are crucial. So... Good luck!
+    + **Disclaimer**: this AldaCourse function does not guarantee you will be able 
+to get the course you want. Some other factors, such as how often you check your emails or 
+how fast you can type and click on your laptop, are extraordinarily crucial. So... Good luck!
 
 ## Contributors
 **Alice Mee Seon Chung** [Alicechung](https://github.com/Alicechung)
