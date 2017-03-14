@@ -31,7 +31,7 @@ the presentation slides.
 * Selenium (v3.3.1)
 * Openpyxl (v2.4.5)
 * Django (v1.10.6)
-* PhantomJS (v2.1)  
+* PhantomJS (v2.1.1) 
 
 ## How to use our program on **Ubuntu**:
 * 1. Fire up a terminal, and go to the directory you want to store AldaCourse.
