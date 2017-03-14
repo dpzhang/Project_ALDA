@@ -95,7 +95,7 @@ feasible and non-conflicted course schedules that best staisfy your demand.
 "Download Schedules" button below. 
 
 * Two possible outcomes:
-    + 1.Boom Shaka Laka! You will see a message called "Your courses schedules are generated 
+    + 1.You will see a message called "Your courses schedules are generated 
 and have already been downloaded to your AldaCourse directory".The generated course schedules 
 could be found in <code>./Project_Alda/AldaCourse/aldacourse/schedule#.xlsx</code>. The
  output course schedule are all in <code>.xlsx</code> spreadsheet format and 
@@ -126,7 +126,7 @@ email address in the email address option below the table.
 
 * Finally, click the "Get Notification" button. 
 
-* Boom Shaka Laka! Congratualations, now you will be one of the first persons 
+* Congratualations, now you will be one of the first persons 
 to receive an email of notification knowing when that popular courss will have an empty seat.
 
 * **Disclaimer**: this AldaCourse function does not guarantee you will be able 
