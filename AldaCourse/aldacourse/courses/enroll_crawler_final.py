@@ -84,8 +84,8 @@ def course_enroll(course_dept, course_num):
         else:
             print('current enroll exceeds total enrollment')
             return False
-except NoSuchElementException:
-    print('Enrollment information somehow unavailable')
+    except NoSuchElementException:
+        print('Enrollment information somehow unavailable')
         driver.quit()
         return False
 
