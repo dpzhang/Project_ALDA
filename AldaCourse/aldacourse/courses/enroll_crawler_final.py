@@ -36,14 +36,14 @@ def setup_driver(course_url):
     while dothething:
         try:
             driver = webdriver.PhantomJS()
-            driver.implicitly_wait(10)
+            driver.implicitly_wait(5)
             driver.set_window_size(1024,768)
             driver.get(course_url)
             quarter_select = Select(driver.find_element_by_id('UC_CLSRCH_WRK2_STRM'))
             if quarter_select.first_selected_option.text != 'Spring 2017':
                 quarter_select.select_by_value('2174')
             driver.save_screenshot('screen.png')
-            driver.implicitly_wait(20)
+            driver.implicitly_wait(5)
             print('driver ready')
             return driver
             break
