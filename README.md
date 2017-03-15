@@ -124,6 +124,9 @@ issue right for you.
 email address in the "Email Address Option" below the table.
 
 * Finally, click the "Get Notification" button. 
+    + **Warning**: our interface would generate a "Timeout Exception" warning 
+message under poor internet environments. We suggest to shut down the current 
+AldaCourse server and re-launch AldaCourse. 
 
 * Congratualations, now you will be one of the first persons 
 to receive an email of notification knowing when that popular course will have an empty seat.
