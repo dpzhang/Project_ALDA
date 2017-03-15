@@ -3,10 +3,10 @@
 ### Ningyin Xu Mar. 4th
 
 ###############################################################################
-
-# To run this, you need to install selenium package, and its phantom driver.
-# Reference Webpage:
-# http://stackoverflow.com/questions/13287490/is-there-a-way-to-use-phantomjs-in-python
+    
+    # To run this, you need to install selenium package, and its phantom driver.
+    # Reference Webpage:
+    # http://stackoverflow.com/questions/13287490/is-there-a-way-to-use-phantomjs-in-python
 
 ###############################################################################
 
@@ -29,9 +29,9 @@ COURSE_URL = 'https://coursesearch.uchicago.edu/psc/prdguest/EMPLOYEE/HRMS/c/UC_
 
 def setup_driver(course_url):
     '''
-        Setup PhantomJS, redirect to Course Search page, fix quarter as "Spring 2017".
-        Get ready to scrape in this page.
-        '''
+    Setup PhantomJS, redirect to Course Search page, fix quarter as "Spring 2017".
+    Get ready to scrape in this page.
+    '''
     dothething = True
     while dothething:
         try:
@@ -57,27 +57,27 @@ def setup_driver(course_url):
 
 def course_enroll(course_dept, course_num):
     '''
-        Given course name, scrape the enrollment info.
-        '''
+    Given course name, scrape the enrollment info.
+    '''
     driver = setup_driver(COURSE_URL)
-    
+
     course_search = course_dept + ' ' + course_num
     searchcontent = driver.find_element_by_id('UC_CLSRCH_WRK2_PTUN_KEYWORD')
     searchcontent.send_keys(course_search)
     searchbtn = driver.find_element_by_id('UC_CLSRCH_WRK_SSR_PB_SEARCH')
     searchbtn.click()
-    
+
     wait = WebDriverWait(driver, 30)
     wait.until(EC.staleness_of(searchbtn))
     driver.save_screenshot('screen_enroll.png')
-    
+
     try:
         enrollinfo = driver.find_element_by_id('UC_CLSRCH_WRK_DESCR1$0').text
         enrollnum = enrollinfo.split()[-1]
         enrollnum = enrollnum.split('/')
         curenroll = int(enrollnum[0])
         totalenroll = int(enrollnum[1])
-        
+
         if curenroll < totalenroll:
             driver.quit()
             return True
@@ -92,8 +92,8 @@ def course_enroll(course_dept, course_num):
 
 def main(course_dept, course_num, emailto, rerun_flag = True):
     '''
-        main function, sending email notification.
-        '''
+    main function, sending email notification.
+    '''
     if rerun_flag:
         th = Timer(120, main, args = (course_dept, course_num, emailto))
         th.start()
@@ -104,19 +104,19 @@ def main(course_dept, course_num, emailto, rerun_flag = True):
         except:
             continue
 
-if enroll:
-    username = 'janicexu423@gmail.com'
+    if enroll:
+        username = 'janicexu423@gmail.com'
         FROM = username
         TO = [emailto]
         TEXT = "Course: " + course_dept + course_num + ' is currently available.'
         SUBJECT = "Enrollment Information"
-        message = """\
-            From: %s
-            To: %s
-            Subject: %s
-            %s
-            """ % (FROM, ", ".join(TO), SUBJECT, TEXT)
-        
+        message = """\                                       
+        From: %s
+        To: %s
+        Subject: %s
+        %s
+        """ % (FROM, ", ".join(TO), SUBJECT, TEXT)
+
         server = smtplib.SMTP('smtp.gmail.com:587')
         server.ehlo()
         server.starttls()
@@ -128,3 +128,25 @@ if enroll:
         return True
     else:
         return False
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
