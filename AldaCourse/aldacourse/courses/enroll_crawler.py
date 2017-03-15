@@ -36,14 +36,14 @@ def setup_driver(course_url):
     while dothething:
         try:
             driver = webdriver.PhantomJS()
-            driver.implicitly_wait(10)
+            driver.implicitly_wait(5)
             driver.set_window_size(1024,768)
             driver.get(course_url)
             quarter_select = Select(driver.find_element_by_id('UC_CLSRCH_WRK2_STRM'))
             if quarter_select.first_selected_option.text != 'Spring 2017':
                 quarter_select.select_by_value('2174')
             driver.save_screenshot('screen.png')
-            driver.implicitly_wait(20)
+            driver.implicitly_wait(5)
             print('driver ready')
             return driver
             break
@@ -67,7 +67,7 @@ def course_enroll(course_dept, course_num):
     searchbtn = driver.find_element_by_id('UC_CLSRCH_WRK_SSR_PB_SEARCH')
     searchbtn.click()
 
-    wait = WebDriverWait(driver, 20)
+    wait = WebDriverWait(driver, 30)
     wait.until(EC.staleness_of(searchbtn))
     driver.save_screenshot('screen_enroll.png')
 
@@ -90,11 +90,19 @@ def course_enroll(course_dept, course_num):
         return False
 
 
-def main(course_dept, course_num, emailto):
+def main(course_dept, course_num, emailto, rerun_flag = True):
     '''
     main function, sending email notification.
     '''
-    enroll = course_enroll(course_dept, course_num)
+    if rerun_flag:
+        th = Timer(120, main, args = (course_dept, course_num, emailto))
+        th.start()
+    while True:
+        try:
+            enroll = course_enroll(course_dept, course_num)
+            break
+        except:
+            continue
 
     if enroll:
         username = 'janicexu423@gmail.com'
@@ -116,13 +124,12 @@ def main(course_dept, course_num, emailto):
         server.login(username, password)
         server.sendmail(FROM, TO, message)
         server.quit()
+        th.cancel()
         return True
     else:
         return False
 
-
-
-
+    
 
 
 

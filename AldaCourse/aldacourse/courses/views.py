@@ -21,7 +21,7 @@ import os
 from django.db.models import Q
 
 from .models import Course, Chooseins, Instructor, InstructorCourse
-from .enroll_crawler_final import *
+from .enroll_crawler import *
 from .decision import *
 from .builder import *
 
